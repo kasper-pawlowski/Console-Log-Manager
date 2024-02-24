@@ -1,0 +1,48 @@
+{
+    "name": "console-log-manager",
+    "displayName": "Console Log Manager",
+    "description": "Manage console logs in your projects from a single location. This extension allows you to view, enable/disable, and delete console.log statements directly from the VS Code sidebar. Supports JavaScript, TypeScript, JSX, TSX, MJS, and CJS files.",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.86.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [],
+    "main": "/src/extension.js",
+    "contributes": {
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "consoleLogManager",
+                    "title": "Console Log Manager",
+                    "icon": "media/icon.svg"
+                }
+            ]
+        },
+        "views": {
+            "consoleLogManager": [
+                {
+                    "type": "webview",
+                    "id": "consoleLogManagerView",
+                    "name": "Console Log Manager"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.86.0",
+        "@types/mocha": "^10.0.6",
+        "@types/node": "18.x",
+        "eslint": "^8.56.0",
+        "typescript": "^5.3.3",
+        "@vscode/test-cli": "^0.0.6",
+        "@vscode/test-electron": "^2.3.9"
+    }
+}
