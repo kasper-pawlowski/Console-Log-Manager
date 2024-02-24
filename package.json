@@ -9,6 +9,10 @@
     "categories": [
         "Other"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kasper-pawlowski/Console-Log-Manager.git"
+    },
     "activationEvents": [],
     "main": "/src/extension.js",
     "contributes": {

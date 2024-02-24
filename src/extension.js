@@ -102,7 +102,7 @@ class ConsoleLogViewProvider {
             <html>
             <head>
             <head>
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css" rel="stylesheet" />
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-material-oceanic.min.css" rel="stylesheet" />
             <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
         </head>
@@ -129,7 +129,8 @@ class ConsoleLogViewProvider {
                 color: gray;
             }
             .code {
-                background-color: #242424;
+                // background-color: #242424;
+                border-radius: 5px !important;
                 display: inline-block;
             }
             .buttons {
